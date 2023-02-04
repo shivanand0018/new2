@@ -14,14 +14,24 @@ items[1].textContent='Hello World'
 var odd=document.querySelectorAll('li:nth-child(odd)')
 var even=document.querySelectorAll('li:nth-child(even)')
 
-for(i=0;i<odd.length;i++)
-{
-    odd[i].style.backgroundColor='#f4f4f4'
-    even[i].style.backgroundColor='#ccc'
-}
+// for(i=0;i<odd.length;i++)
+// {
+//     odd[i].style.backgroundColor='#f4f4f4'
+//     even[i].style.backgroundColor='#ccc'
+// }
 
 items[2].style.backgroundColor='green'
 for(i=0;i<items.length;i++)
 {
 items[i].style.fontWeight='bold'
 }
+
+var items1=document.getElementsByClassName('list')
+console.log(items1)
+
+items1[0].textContent='List 5'
+
+var items2=document.getElementsByTagName('li')
+console.log(items2)
+
+items2[4].textContent='Item 5'
